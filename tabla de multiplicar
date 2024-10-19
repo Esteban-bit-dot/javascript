@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Tabla de Multiplicar</title>
+  </head>
+  <body>
+    <script>
+      var numero = parseInt(prompt("Ingrese el número de la tabla de multiplicar que desea (1 al 10)"));
+      
+      if (numero < 1 || numero > 10 || isNaN(numero)) {
+        console.log("Por favor, ingrese un número válido entre 1 y 10.");
+      } else {
+        var i = 1; 
+        while (i <= 10) {
+          var resultado = numero * i;
+          console.log(numero + " * " + i + " = " + resultado);
+          i++; 
+        }
+      }
+    </script>
+  </body>
+</html>
+
