@@ -1,0 +1,64 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    text-shadow: 2px 3px 4px black;
+    background: blue;
+    padding: 20px;
+    box-shadow: 9px 4px 8px black;
+    border-radius: 10px;
+}
+.container:hover{
+    background-color: darkblue;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+h2{
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    padding: 11px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: red;
+    color: black;
+    border-radius: 15px;
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: orangered;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.choices button {
+    width: 100px;
+}
