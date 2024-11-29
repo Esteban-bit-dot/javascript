@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijeras</title>
+    <link rel="stylesheet" href="piedra,papel o tijera.CSS">
+</head>
+<body>
+    <div class="container">
+        <div id="auth-container">
+            <div id="login-form" class="form">
+                <h2>Inicio de Sesión</h2>
+                <input type="text" id="login-username" placeholder="Usuario" required>
+                <input type="password" id="login-password" placeholder="Contraseña" required>
+                <button onclick="login()">Ingresar</button>
+                <p>¿No tienes una cuenta? <a href="#" onclick="showRegisterForm()">Regístrate</a></p>
+            </div>
+            <div id="register-form" class="form hidden">
+                <h2>Registro</h2>
+                <input type="text" id="register-username" placeholder="Usuario" required>
+                <input type="email" id="register-email" placeholder="Correo Electrónico" required>
+                <input type="password" id="register-password" placeholder="Contraseña" required>
+                <button onclick="register()">Registrar</button>
+                <p>¿Ya tienes una cuenta? <a href="#" onclick="showLoginForm()">Inicia sesión</a></p>
+            </div>
+        </div>
+        <div id="game-container" class="hidden">
+            <h2>Piedra, Papel o Tijeras</h2>
+            <p id="welcome-user"></p>
+            <div class="choices">
+                <button onclick="play('piedra')">Piedra</button>
+                <button onclick="play('papel')">Papel</button>
+                <button onclick="play('tijeras')">Tijeras</button>
+            </div>
+            <p id="game-result"></p>
+        </div>
+    </div>
+    <script src="juego piedra,papel o tijera.JS"></script>
+</body>
+</html>
